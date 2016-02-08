@@ -1,0 +1,16 @@
+C:\Users\uulin\OneDrive\袋马代码\练习区\windows_gui_practice\takearest\takearest\bin\Debug\takearest.exe.config
+C:\Users\uulin\OneDrive\袋马代码\练习区\windows_gui_practice\takearest\takearest\bin\Debug\takearest.exe
+C:\Users\uulin\OneDrive\袋马代码\练习区\windows_gui_practice\takearest\takearest\bin\Debug\takearest.pdb
+C:\Users\uulin\OneDrive\袋马代码\练习区\windows_gui_practice\takearest\takearest\obj\Debug\takearest.csprojResolveAssemblyReference.cache
+C:\Users\uulin\OneDrive\袋马代码\练习区\windows_gui_practice\takearest\takearest\obj\Debug\takearest.Properties.Resources.resources
+C:\Users\uulin\OneDrive\袋马代码\练习区\windows_gui_practice\takearest\takearest\obj\Debug\takearest.csproj.GenerateResource.Cache
+C:\Users\uulin\OneDrive\袋马代码\练习区\windows_gui_practice\takearest\takearest\obj\Debug\takearest.exe
+C:\Users\uulin\OneDrive\袋马代码\练习区\windows_gui_practice\takearest\takearest\obj\Debug\takearest.pdb
+C:\Users\uulin\OneDrive\袋马代码\练习区\windows_gui_practice\takearest\takearest\obj\Debug\takearest.CodeAndRest.resources
+C:\Users\uulin\OneDrive\袋马代码\练习区\windows_gui_practice\takearest\takearest\bin\Debug\Interop.WMPLib.dll
+C:\Users\uulin\OneDrive\袋马代码\练习区\windows_gui_practice\takearest\takearest\bin\Debug\AxInterop.WMPLib.dll
+C:\Users\uulin\OneDrive\袋马代码\练习区\windows_gui_practice\takearest\takearest\obj\Debug\Interop.MediaPlayer.dll
+C:\Users\uulin\OneDrive\袋马代码\练习区\windows_gui_practice\takearest\takearest\obj\Debug\Interop.WMPLib.dll
+C:\Users\uulin\OneDrive\袋马代码\练习区\windows_gui_practice\takearest\takearest\obj\Debug\AxInterop.WMPLib.dll
+C:\Users\uulin\OneDrive\袋马代码\练习区\windows_gui_practice\takearest\takearest\obj\Debug\takearest.csproj.ResolveComReference.cache
+C:\Users\uulin\OneDrive\袋马代码\练习区\windows_gui_practice\takearest\takearest\obj\Debug\takearest.record.resources
