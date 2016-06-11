@@ -20,10 +20,15 @@ namespace takearest
 
         private void record_Load(object sender, EventArgs e)
         {
-            DataSet dds = new DataSet();
-            dds.ReadXml(RECORD_FILE);
-            this.DGV.DataSource = dds.Tables[0].DefaultView;
-
+            try {
+                DataSet dds = new DataSet();
+                dds.ReadXml(RECORD_FILE);
+                this.DGV.DataSource = dds.Tables[0].DefaultView;
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("还没有记录呢！");
+            }
         }
     }
 }

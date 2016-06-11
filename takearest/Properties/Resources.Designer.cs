@@ -63,9 +63,49 @@ namespace takearest.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Bitmap _0a7408387a09cdc3e275c0b33c46bcd27563184410b89_DdaKlt_fw658 {
+        internal static System.Drawing.Bitmap cpp {
             get {
-                object obj = ResourceManager.GetObject("0a7408387a09cdc3e275c0b33c46bcd27563184410b89-DdaKlt_fw658", resourceCulture);
+                object obj = ResourceManager.GetObject("cpp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap homebackground {
+            get {
+                object obj = ResourceManager.GetObject("homebackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Java {
+            get {
+                object obj = ResourceManager.GetObject("Java", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap python {
+            get {
+                object obj = ResourceManager.GetObject("python", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 植物草丛 {
+            get {
+                object obj = ResourceManager.GetObject("植物草丛", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

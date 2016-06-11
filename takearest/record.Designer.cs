@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(record));
             this.DGV = new System.Windows.Forms.DataGridView();
             this.begin_time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.coding_time = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -97,6 +98,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(576, 313);
             this.Controls.Add(this.DGV);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "record";
             this.Text = "record";
             this.Load += new System.EventHandler(this.record_Load);

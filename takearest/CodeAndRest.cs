@@ -33,7 +33,6 @@ namespace takearest
 
         private void CodeAndRest_Load(object sender, EventArgs e)
         {
-            mp.Ctlcontrols.stop();
             load_file();
             //控件属性初始化
             timer2.Start();
@@ -46,9 +45,7 @@ namespace takearest
 
             showRecord();
         }
-
      
-
         //<summary>
         // 创建记录文件codeRecord.xml
         //</summary>
@@ -68,7 +65,7 @@ namespace takearest
                     }
                     catch (Exception e)
                     {
-                        //Console.WriteLine(e.Message);
+                        Console.WriteLine(e.Message);
                     }
                 }
         }
@@ -89,7 +86,6 @@ namespace takearest
             return "「" + (time / 60).ToString() + "分" + (time % 60).ToString() + "秒」";
         }
 
-
         ///<summary>
         ///读取记录文件并处理显示
         ///</summary>
@@ -100,37 +96,55 @@ namespace takearest
             historyBox.Text = string.Empty;
             if (File.Exists(path))
             {
-                XmlDocument xml_doc = new XmlDocument();
-                xml_doc.Load(path);
-                string str = string.Empty;
-             
+                try
+                {
+                    XmlDocument xml_doc = new XmlDocument();
+                    xml_doc.Load(path);
+                    string str = string.Empty;
+
                     XmlNodeList work_list = xml_doc.SelectNodes("/history/your_work");
-                if (work_list != null)
-                {
-                    XmlNode work = work_list[work_list.Count - 1];
-                    historyBox.Text += "你在" + work["begin_time"].InnerText + "在"
-                               + work["type"].InnerText
-                               + "上花费了"
-                               + time2fomat(work["coding_time"].InnerText) + "的时间呢，" + "一直忙到了" + work["end_time"].InnerText
-                               + ". 你想补充的是:" + work["Note"].InnerText + "\r\n";
-                    totalCodeTime += getaCodeTime(work["coding_time"].InnerText);
-                }
-                
-                if (work_list != null)
-                {
-                    foreach (XmlNode work in work_list)
+                    if (work_list != null)
                     {
+                        XmlNode work = work_list[work_list.Count - 1];
+                        historyBox.Text += "你在" + work["begin_time"].InnerText + "在"
+                                   + work["type"].InnerText
+                                   + "上花费了"
+                                   + time2fomat(work["coding_time"].InnerText) + "的时间呢，" + "一直忙到了" + work["end_time"].InnerText
+                                   + ". 你想补充的是:" + work["Note"].InnerText + "\r\n";
                         totalCodeTime += getaCodeTime(work["coding_time"].InnerText);
                     }
+
+                    if (work_list != null)
+                    {
+                        foreach (XmlNode work in work_list)
+                        {
+                            totalCodeTime += getaCodeTime(work["coding_time"].InnerText);
+                        }
+                    }
+                    showPassedTimeLabel.Text = "You have coded for " + totalCodeTime + " seconds";
                 }
-                showPassedTimeLabel.Text = "You have coded for " + totalCodeTime + " seconds";
+                catch (Exception es)
+                {
+                    Console.WriteLine(es.Message);
+                }
             }
         }
 
+        /// <summary>    
+        /// 创建节点    
+        /// </summary>    
+        /// <param name="xmldoc"></param>  xml文档  
+        /// <param name="parentnode"></param>父节点    
+        /// <param name="name"></param>  节点名  
+        /// <param name="value"></param>  节点值  
+        ///   
+        public void CreateNode(XmlDocument xmlDoc, XmlNode parentNode, string name, string value)
+        {
+            XmlNode node = xmlDoc.CreateNode(XmlNodeType.Element, name, null);
+            node.InnerText = value;
+            parentNode.AppendChild(node);
+        }
 
-
-
-        
 
         ///<summary>
         ///开始记录时间
@@ -170,22 +184,29 @@ namespace takearest
 
         }
 
-        /// <summary>    
-        /// 创建节点    
-        /// </summary>    
-        /// <param name="xmldoc"></param>  xml文档  
-        /// <param name="parentnode"></param>父节点    
-        /// <param name="name"></param>  节点名  
-        /// <param name="value"></param>  节点值  
-        ///   
-        public void CreateNode(XmlDocument xmlDoc, XmlNode parentNode, string name, string value)
+        ///<summary>
+        /// 到点提醒
+        /// </summary>
+        void clock()
         {
-            XmlNode node = xmlDoc.CreateNode(XmlNodeType.Element, name, null);
-            node.InnerText = value;
-            parentNode.AppendChild(node);
+            reminder clock_window = new reminder();
+            clock_window.Show();
+            stopRecord();
+            showRecord();//刷新事件记录表格
         }
 
-
+        ///<summary>
+        ///时钟进行事件,程序逻辑
+        ///</summary>
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            passedTime++;
+            showPassedTimeLabel.Text = "已过去 " + passedTime.ToString() + " s";
+            if (passedTime >= mysetTime)
+            {
+                clock();
+            }
+        }
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -206,37 +227,6 @@ namespace takearest
                 startRecord();
             }
                 
-        }
-
-
-        ///<summary>
-        /// 到点提醒
-        /// </summary>
-        void clock()
-        {
-            mp.Ctlcontrols.play();
-            stopRecord();
-
-            if (MessageBox.Show("时间到", "确认", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
-            {
-                mp.Ctlcontrols.stop();
-            }
-                showRecord();
-        }
-
-
-
-        ///<summary>
-        ///时钟进行事件
-        ///</summary>
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            passedTime++;
-            showPassedTimeLabel.Text = "已过去 " + passedTime.ToString() + " s";
-            if (passedTime >= mysetTime)
-            {
-                clock();
-            }
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -299,7 +289,17 @@ namespace takearest
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            this.historyBox.Left -= 2;
+            if(historyBox.Left < this.ClientRectangle.Width/2 && historyBox.Right > this.ClientRectangle.Width / 2)
+                this.historyBox.Left -= 1;
+            else
+            if(this.historyBox.Right > 0)
+            {
+                this.historyBox.Left -= 15;
+            }
+            else
+            {
+                this.historyBox.Left -= 30;
+            }
             if (historyBox.Right<0)
                 historyBox.Left = this.ClientRectangle.Width;
         }

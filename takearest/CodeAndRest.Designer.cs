@@ -35,15 +35,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.mp = new AxWMPLib.AxWindowsMediaPlayer();
             this.startBtn = new System.Windows.Forms.Button();
             this.showPassedTimeLabel = new System.Windows.Forms.Label();
             this.stopBtn = new System.Windows.Forms.Button();
-            this.cppstart = new System.Windows.Forms.Button();
-            this.javastart = new System.Windows.Forms.Button();
-            this.pythonstart = new System.Windows.Forms.Button();
             this.history = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cpp_btn = new System.Windows.Forms.PictureBox();
+            this.java_btn = new System.Windows.Forms.PictureBox();
+            this.python_btn = new System.Windows.Forms.PictureBox();
             this.historyBox = new System.Windows.Forms.Label();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.note_text = new System.Windows.Forms.TextBox();
@@ -52,8 +51,10 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mp)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cpp_btn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.java_btn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.python_btn)).BeginInit();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,7 +66,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(158, 8);
+            this.label1.Location = new System.Drawing.Point(198, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(32, 17);
             this.label1.TabIndex = 1;
@@ -75,7 +76,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 8);
+            this.label2.Location = new System.Drawing.Point(51, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(32, 17);
             this.label2.TabIndex = 2;
@@ -90,7 +91,7 @@
             "45",
             "60",
             "120"});
-            this.comboBox1.Location = new System.Drawing.Point(73, 4);
+            this.comboBox1.Location = new System.Drawing.Point(109, 6);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(77, 25);
@@ -102,16 +103,6 @@
             // bindingSource1
             // 
             this.bindingSource1.CurrentChanged += new System.EventHandler(this.bindingSource1_CurrentChanged);
-            // 
-            // mp
-            // 
-            this.mp.Enabled = true;
-            this.mp.Location = new System.Drawing.Point(567, 307);
-            this.mp.Name = "mp";
-            this.mp.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mp.OcxState")));
-            this.mp.Size = new System.Drawing.Size(75, 23);
-            this.mp.TabIndex = 13;
-            this.mp.Visible = false;
             // 
             // startBtn
             // 
@@ -144,39 +135,11 @@
             this.stopBtn.UseVisualStyleBackColor = true;
             this.stopBtn.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // cppstart
-            // 
-            this.cppstart.Location = new System.Drawing.Point(9, 145);
-            this.cppstart.Name = "cppstart";
-            this.cppstart.Size = new System.Drawing.Size(75, 23);
-            this.cppstart.TabIndex = 9;
-            this.cppstart.Text = "c++";
-            this.cppstart.UseVisualStyleBackColor = true;
-            // 
-            // javastart
-            // 
-            this.javastart.Location = new System.Drawing.Point(126, 145);
-            this.javastart.Name = "javastart";
-            this.javastart.Size = new System.Drawing.Size(75, 23);
-            this.javastart.TabIndex = 10;
-            this.javastart.Text = "java";
-            this.javastart.UseVisualStyleBackColor = true;
-            // 
-            // pythonstart
-            // 
-            this.pythonstart.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pythonstart.Location = new System.Drawing.Point(242, 145);
-            this.pythonstart.Name = "pythonstart";
-            this.pythonstart.Size = new System.Drawing.Size(75, 23);
-            this.pythonstart.TabIndex = 11;
-            this.pythonstart.Text = "python";
-            this.pythonstart.UseVisualStyleBackColor = true;
-            // 
             // history
             // 
             this.history.Location = new System.Drawing.Point(0, 0);
             this.history.Name = "history";
-            this.history.Size = new System.Drawing.Size(45, 23);
+            this.history.Size = new System.Drawing.Size(71, 26);
             this.history.TabIndex = 12;
             this.history.Text = "记录";
             this.history.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -185,10 +148,10 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.cpp_btn);
+            this.panel1.Controls.Add(this.java_btn);
+            this.panel1.Controls.Add(this.python_btn);
             this.panel1.Controls.Add(this.history);
-            this.panel1.Controls.Add(this.pythonstart);
-            this.panel1.Controls.Add(this.javastart);
-            this.panel1.Controls.Add(this.cppstart);
             this.panel1.Controls.Add(this.stopBtn);
             this.panel1.Controls.Add(this.startBtn);
             this.panel1.Location = new System.Drawing.Point(12, 153);
@@ -196,25 +159,52 @@
             this.panel1.Size = new System.Drawing.Size(341, 177);
             this.panel1.TabIndex = 14;
             // 
+            // cpp_btn
+            // 
+            this.cpp_btn.Image = ((System.Drawing.Image)(resources.GetObject("cpp_btn.Image")));
+            this.cpp_btn.Location = new System.Drawing.Point(16, 134);
+            this.cpp_btn.Name = "cpp_btn";
+            this.cpp_btn.Size = new System.Drawing.Size(32, 32);
+            this.cpp_btn.TabIndex = 15;
+            this.cpp_btn.TabStop = false;
+            // 
+            // java_btn
+            // 
+            this.java_btn.Image = global::takearest.Properties.Resources.Java;
+            this.java_btn.Location = new System.Drawing.Point(77, 134);
+            this.java_btn.Name = "java_btn";
+            this.java_btn.Size = new System.Drawing.Size(32, 32);
+            this.java_btn.TabIndex = 14;
+            this.java_btn.TabStop = false;
+            // 
+            // python_btn
+            // 
+            this.python_btn.Image = global::takearest.Properties.Resources.python;
+            this.python_btn.Location = new System.Drawing.Point(136, 134);
+            this.python_btn.Name = "python_btn";
+            this.python_btn.Size = new System.Drawing.Size(32, 32);
+            this.python_btn.TabIndex = 13;
+            this.python_btn.TabStop = false;
+            // 
             // historyBox
             // 
             this.historyBox.AutoSize = true;
-            this.historyBox.Font = new System.Drawing.Font("幼圆", 10.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.historyBox.Font = new System.Drawing.Font("微软雅黑 Light", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.historyBox.Location = new System.Drawing.Point(265, -1);
             this.historyBox.Name = "historyBox";
-            this.historyBox.Size = new System.Drawing.Size(55, 14);
+            this.historyBox.Size = new System.Drawing.Size(51, 20);
             this.historyBox.TabIndex = 16;
             this.historyBox.Text = "record";
             this.historyBox.Click += new System.EventHandler(this.historyBox_Click);
             // 
             // timer2
             // 
-            this.timer2.Interval = 50;
+            this.timer2.Interval = 10;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
             // note_text
             // 
-            this.note_text.Location = new System.Drawing.Point(73, 70);
+            this.note_text.Location = new System.Drawing.Point(109, 74);
             this.note_text.Multiline = true;
             this.note_text.Name = "note_text";
             this.note_text.Size = new System.Drawing.Size(77, 21);
@@ -223,7 +213,7 @@
             // label_note
             // 
             this.label_note.AutoSize = true;
-            this.label_note.Location = new System.Drawing.Point(32, 74);
+            this.label_note.Location = new System.Drawing.Point(46, 74);
             this.label_note.Name = "label_note";
             this.label_note.Size = new System.Drawing.Size(37, 17);
             this.label_note.TabIndex = 18;
@@ -234,6 +224,7 @@
             // 
             this.type_text.AllowDrop = true;
             this.type_text.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.type_text.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.type_text.FormattingEnabled = true;
             this.type_text.Items.AddRange(new object[] {
             "Python",
@@ -241,7 +232,7 @@
             "c++",
             "Web",
             "Android"});
-            this.type_text.Location = new System.Drawing.Point(100, 36);
+            this.type_text.Location = new System.Drawing.Point(109, 37);
             this.type_text.Name = "type_text";
             this.type_text.Size = new System.Drawing.Size(121, 25);
             this.type_text.TabIndex = 2;
@@ -249,7 +240,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 44);
+            this.label3.Location = new System.Drawing.Point(3, 44);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 17);
             this.label3.TabIndex = 19;
@@ -264,9 +255,9 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label_note);
             this.panel2.Controls.Add(this.note_text);
-            this.panel2.Location = new System.Drawing.Point(411, 153);
+            this.panel2.Location = new System.Drawing.Point(390, 153);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(231, 148);
+            this.panel2.Size = new System.Drawing.Size(252, 148);
             this.panel2.TabIndex = 20;
             // 
             // CodeAndRest
@@ -274,24 +265,26 @@
             this.AcceptButton = this.startBtn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::takearest.Properties.Resources._0a7408387a09cdc3e275c0b33c46bcd27563184410b89_DdaKlt_fw658;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(642, 331);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.historyBox);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.mp);
             this.Controls.Add(this.showPassedTimeLabel);
             this.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "CodeAndRest";
-            this.Text = "大人请注意身体";
+            this.Text = "请您注意身体";
             this.Load += new System.EventHandler(this.CodeAndRest_Load);
             this.Enter += new System.EventHandler(this.CodeAndRest_Enter);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CodeAndRest_KeyDown);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CodeAndRest_KeyPress);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mp)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cpp_btn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.java_btn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.python_btn)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);
@@ -306,13 +299,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.BindingSource bindingSource1;
-        private AxWMPLib.AxWindowsMediaPlayer mp;
         private System.Windows.Forms.Button startBtn;
         private System.Windows.Forms.Label showPassedTimeLabel;
         private System.Windows.Forms.Button stopBtn;
-        private System.Windows.Forms.Button cppstart;
-        private System.Windows.Forms.Button javastart;
-        private System.Windows.Forms.Button pythonstart;
         private System.Windows.Forms.Button history;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label historyBox;
@@ -322,6 +311,9 @@
         private System.Windows.Forms.ComboBox type_text;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox python_btn;
+        private System.Windows.Forms.PictureBox cpp_btn;
+        private System.Windows.Forms.PictureBox java_btn;
     }
 }
 
