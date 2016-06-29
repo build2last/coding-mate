@@ -86,6 +86,25 @@ namespace takearest
             return "「" + (time / 60).ToString() + "分" + (time % 60).ToString() + "秒」";
         }
 
+        public string second_time_fomat(int seconds_sum)
+        {
+            string time_str = "0";
+            if(seconds_sum > 3600)
+            {
+                int hours = seconds_sum / 3600;
+                int minutes = (seconds_sum % 3600) / 60;
+                int seconds = (seconds_sum % 3600) % 60;
+                time_str = string.Format("{0}时 {1}分 {2}秒", hours, minutes, seconds);
+            }
+            else if(seconds_sum < 3600)
+            {
+                int minutes = seconds_sum/ 60;
+                int seconds = seconds_sum % 60;
+                time_str = string.Format("{0}分 {1}秒", minutes, seconds);
+            }
+            return time_str;
+        }
+
         ///<summary>
         ///读取记录文件并处理显示
         ///</summary>
@@ -121,11 +140,12 @@ namespace takearest
                             totalCodeTime += getaCodeTime(work["coding_time"].InnerText);
                         }
                     }
-                    showPassedTimeLabel.Text = "You have coded for " + totalCodeTime + " seconds";
+                    string passed_time = second_time_fomat(totalCodeTime);
+                    showPassedTimeLabel.Text = "You have coded for " + passed_time;
                 }
                 catch (Exception es)
                 {
-                    Console.WriteLine(es.Message);
+                    // MessageBox.Show(es.Message);
                 }
             }
         }
@@ -153,7 +173,6 @@ namespace takearest
         {
             mysetTime = Convert.ToInt32(comboBox1.Text.ToString()) * 60;
             note = note_text.Text;
-
             this.panel2.Enabled = false;
             timer1.Start();
         }
