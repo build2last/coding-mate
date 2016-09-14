@@ -1,6 +1,6 @@
 ﻿# coding-mate
-##记录编码时光！ always with me:wink:.
-
+##记录编码时光！ Here always with you:wink:
+A Windows desktop app project in C# VS2015.
 
 
 ### 更新日志
