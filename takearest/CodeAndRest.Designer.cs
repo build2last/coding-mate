@@ -50,6 +50,7 @@
             this.type_text = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.add40minute = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cpp_btn)).BeginInit();
@@ -148,6 +149,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.add40minute);
             this.panel1.Controls.Add(this.cpp_btn);
             this.panel1.Controls.Add(this.java_btn);
             this.panel1.Controls.Add(this.python_btn);
@@ -231,7 +233,8 @@
             "JAVA",
             "c++",
             "Web",
-            "Android"});
+            "Android",
+            "C"});
             this.type_text.Location = new System.Drawing.Point(109, 37);
             this.type_text.Name = "type_text";
             this.type_text.Size = new System.Drawing.Size(121, 25);
@@ -259,6 +262,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(252, 148);
             this.panel2.TabIndex = 20;
+            // 
+            // add40minute
+            // 
+            this.add40minute.Location = new System.Drawing.Point(211, 134);
+            this.add40minute.Name = "add40minute";
+            this.add40minute.Size = new System.Drawing.Size(75, 23);
+            this.add40minute.TabIndex = 16;
+            this.add40minute.Text = "再续40分钟";
+            this.add40minute.UseVisualStyleBackColor = true;
+            this.add40minute.Click += new System.EventHandler(this.add40minute_Click);
             // 
             // CodeAndRest
             // 
@@ -314,6 +327,7 @@
         private System.Windows.Forms.PictureBox python_btn;
         private System.Windows.Forms.PictureBox cpp_btn;
         private System.Windows.Forms.PictureBox java_btn;
+        private System.Windows.Forms.Button add40minute;
     }
 }
 

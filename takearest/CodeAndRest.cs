@@ -42,7 +42,7 @@ namespace takearest
             label2.BackColor = Color.Transparent;
             showPassedTimeLabel.BackColor= Color.Transparent;
             // this.historyBox.BackColor = Color.Transparent;
-
+            add40minute.Visible = false;
             showRecord();
         }
      
@@ -171,7 +171,7 @@ namespace takearest
         ///</summary>
         public void startRecord()
         {
-            mysetTime = Convert.ToInt32(comboBox1.Text.ToString()) * 60;
+            mysetTime = Convert.ToInt32(comboBox1.Text.ToString()) * 60 +5; //+5 for test
             note = note_text.Text;
             this.panel2.Enabled = false;
             timer1.Start();
@@ -203,6 +203,18 @@ namespace takearest
 
         }
 
+        /// <summary>
+        /// 提前提醒弹窗
+        /// </summary>
+        void pre_reminder()
+        {
+            this.Show();
+            add40minute.Visible = true;
+            MessageBox.Show("时间快到了框！", "还有5分钟", MessageBoxButtons.OK,
+                MessageBoxIcon.Warning, MessageBoxDefaultButton.Button1);
+        }
+
+
         ///<summary>
         /// 到点提醒
         /// </summary>
@@ -220,16 +232,21 @@ namespace takearest
         private void timer1_Tick(object sender, EventArgs e)
         {
             passedTime++;
-            showPassedTimeLabel.Text = "已过去 " + passedTime.ToString() + " s";
+            showPassedTimeLabel.Text = "已过去 " + passedTime.ToString() + " s " + "还剩 " + second_time_fomat(mysetTime-passedTime) + "";
             if (passedTime >= mysetTime)
             {
                 clock();
             }
+            else if(passedTime + 300 == mysetTime)
+            // else if (passedTime + 300 > mysetTime) // test
+            {
+                pre_reminder();
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
 
             if (this.type_text.Text == string.Empty)
             {
@@ -351,6 +368,17 @@ namespace takearest
         {
             
             
+        }
+
+        /// <summary>
+        /// 时间延长40分钟
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void add40minute_Click(object sender, EventArgs e)
+        {
+            mysetTime += 40 * 60;
+            add40minute.Visible = false;
         }
     }
 }

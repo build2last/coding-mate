@@ -1,0 +1,16 @@
+C:\Users\uulin\OneDrive\Github\coding-mate\takearest\bin\Release\编程伴侣.exe.config
+C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Release\Interop.MediaPlayer.dll
+C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Release\Interop.WMPLib.dll
+C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Release\AxInterop.WMPLib.dll
+C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Release\takearest.csproj.ResolveComReference.cache
+C:\Users\uulin\OneDrive\Github\coding-mate\takearest\bin\Release\编程伴侣.exe
+C:\Users\uulin\OneDrive\Github\coding-mate\takearest\bin\Release\编程伴侣.pdb
+C:\Users\uulin\OneDrive\Github\coding-mate\takearest\bin\Release\Interop.WMPLib.dll
+C:\Users\uulin\OneDrive\Github\coding-mate\takearest\bin\Release\AxInterop.WMPLib.dll
+C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Release\takearest.CodeAndRest.resources
+C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Release\takearest.Properties.Resources.resources
+C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Release\takearest.record.resources
+C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Release\takearest.reminder.resources
+C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Release\takearest.csproj.GenerateResource.Cache
+C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Release\编程伴侣.exe
+C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Release\编程伴侣.pdb
