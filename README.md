@@ -1,5 +1,5 @@
-﻿# coding-mate
-##记录编码时光！ Here always with you:wink:
+# coding-mate
+## 记录编码时光！ Here always with you:wink:
 A Windows desktop app project in C# VS2015.
 
 
@@ -10,14 +10,14 @@ A Windows desktop app project in C# VS2015.
 =====
 
 ### 更新备忘：
-###1.记录编程时间
-###2.计时提醒
-###3.快捷地做好编程准备
-###4.提供一些方便编程的功能
-###5.more
+ * [x] 记录编程时间
+ * [x] 计时提醒
+ * 快捷地做好编程准备
+ * 提供一些方便编程的功能
+ * 提供对编程数据的统计和分析
 
 =====
 
 ### 使用说明
-1. 在执行文件下 提示音频.mp3  为到点提醒音频
-2. codeRecord.xml 为记录文件，存储着你的数据，请勿编辑！
+1. 在执行文件同级目录下 **提示音频.mp3**  为到点提醒音频
+2. **codeRecord.xml** 为记录文件，存储着你的数据，请勿编辑！
