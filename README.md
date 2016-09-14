@@ -1,5 +1,5 @@
 ﻿# coding-mate
-##记录编码时光！ Note down the coding time.
+##记录编码时光！ always with me:wink:.
 
 
 
