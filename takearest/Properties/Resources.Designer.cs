@@ -73,6 +73,16 @@ namespace takearest.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap GirlFlipHair {
+            get {
+                object obj = ResourceManager.GetObject("GirlFlipHair", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap homebackground {
             get {
                 object obj = ResourceManager.GetObject("homebackground", resourceCulture);
@@ -86,6 +96,16 @@ namespace takearest.Properties {
         internal static System.Drawing.Bitmap Java {
             get {
                 object obj = ResourceManager.GetObject("Java", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap javascript {
+            get {
+                object obj = ResourceManager.GetObject("javascript", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

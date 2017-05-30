@@ -34,7 +34,9 @@ namespace takearest
             catch(Exception ex)
             {
                 MessageBox.Show("还没有记录呢！");
+                this.Close();
             }
+            
         }
 
         void statistic()

@@ -1,6 +1,5 @@
 ﻿//如果发现程序数据溢出了，那么说明已经执行了 2^31/60/60/24/365=68.096259766616年之久，向您致敬
 
-
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,16 +15,16 @@ using System.Xml;
 
 namespace takearest
 {
-    public partial class CodeAndRest : Form
+    public partial class MainPage : Form
     {
-        int passedTime = 0;//过去的时间，单位秒。
-        int mysetTime;//设置的时间，单位 秒
+        int passedTime = 0;                                                  //过去的时间，单位秒。
+        int mysetTime;                                                       //设置的时间，单位 秒
         int totalCodeTime = 0;// seconds
-        string RECORD_FILE=Application.StartupPath + @"\codeRecord.xml";//记录文件路径
-        string code_type = string.Empty;//记录这波编码的类型
-        string note = string.Empty;
+        string RECORD_FILE=Application.StartupPath + @"\codeRecord.xml";     //记录文件路径
+        string code_type = string.Empty;                                     //记录这波编码的类型
+        string note = string.Empty; 
 
-        public CodeAndRest()
+        public MainPage()
         {
             InitializeComponent();
         }
@@ -34,16 +33,14 @@ namespace takearest
         private void CodeAndRest_Load(object sender, EventArgs e)
         {
             load_file();
-            //控件属性初始化
-            timer2.Start();
+            // 控件属性初始化
+            showRecord();
             this.panel1.BackColor = Color.Transparent;
             this.panel2.BackColor = Color.Transparent;
             label1.BackColor = Color.Transparent;
             label2.BackColor = Color.Transparent;
             showPassedTimeLabel.BackColor= Color.Transparent;
-            // this.historyBox.BackColor = Color.Transparent;
             add40minute.Visible = false;
-            showRecord();
         }
      
         //<summary>
@@ -110,9 +107,11 @@ namespace takearest
         ///</summary>
         public void showRecord()
         {
+            timer2.Start();
             totalCodeTime = 0;
             string path = RECORD_FILE;
             historyBox.Text = string.Empty;
+            historyBox2.Text = string.Empty;
             if (File.Exists(path))
             {
                 try
@@ -124,6 +123,8 @@ namespace takearest
                     XmlNodeList work_list = xml_doc.SelectNodes("/history/your_work");
                     if (work_list != null)
                     {
+                        timer2.Enabled = true;
+                        historyBox.Visible = true;
                         XmlNode work = work_list[work_list.Count - 1];
                         historyBox.Text += "你在" + work["begin_time"].InnerText + "在"
                                    + work["type"].InnerText
@@ -131,6 +132,21 @@ namespace takearest
                                    + time2fomat(work["coding_time"].InnerText) + "的时间呢，" + "一直忙到了" + work["end_time"].InnerText
                                    + ". 你想补充的是:" + work["Note"].InnerText + "\r\n";
                         totalCodeTime += getaCodeTime(work["coding_time"].InnerText);
+                        if (work_list.Count >= 2)
+                        {
+                            historyBox2.Visible = true;
+                            work = work_list[work_list.Count - 2];
+                            historyBox2.Text += "你在" + work["begin_time"].InnerText + "在"
+                                       + work["type"].InnerText
+                                       + "上花费了"
+                                       + time2fomat(work["coding_time"].InnerText) + "的时间呢，" + "一直忙到了" + work["end_time"].InnerText
+                                       + ". 你想补充的是:" + work["Note"].InnerText + "\r\n";
+                            totalCodeTime += getaCodeTime(work["coding_time"].InnerText);
+                        }
+                    }
+                    else
+                    {
+                        timer2.Enabled = false;
                     }
 
                     if (work_list != null)
@@ -171,7 +187,7 @@ namespace takearest
         ///</summary>
         public void startRecord()
         {
-            mysetTime = Convert.ToInt32(comboBox1.Text.ToString()) * 60 +5; //+5 for test
+            mysetTime = Convert.ToInt32(comboBox1.Text.ToString()) * 60; //+5 for test
             note = note_text.Text;
             this.panel2.Enabled = false;
             timer1.Start();
@@ -238,7 +254,6 @@ namespace takearest
                 clock();
             }
             else if(passedTime + 300 == mysetTime)
-            // else if (passedTime + 300 > mysetTime) // test
             {
                 pre_reminder();
             }
@@ -295,17 +310,6 @@ namespace takearest
         {
             record re = new record();
             re.Show();
-            /*
-            if (historyBox.Visible == false)
-            {
-                historyBox.Visible = true;
-                history.Text = "历史（隐）";
-            }
-            else
-            {
-                historyBox.Visible = false;
-                history.Text = "历史（显）";
-            }*/
         }
 
         private void bindingSource1_CurrentChanged(object sender, EventArgs e)
@@ -326,7 +330,7 @@ namespace takearest
         private void timer2_Tick(object sender, EventArgs e)
         {
             if(historyBox.Left < this.ClientRectangle.Width/2 && historyBox.Right > this.ClientRectangle.Width / 2)
-                this.historyBox.Left -= 1;
+                this.historyBox.Left -= 2;
             else
             if(this.historyBox.Right > 0)
             {
@@ -338,6 +342,20 @@ namespace takearest
             }
             if (historyBox.Right<0)
                 historyBox.Left = this.ClientRectangle.Width;
+
+            if (historyBox2.Left < this.ClientRectangle.Width / 2 && historyBox.Right > this.ClientRectangle.Width / 2)
+                this.historyBox2.Left -= 3;
+            else
+            if (this.historyBox2.Right > 0)
+            {
+                this.historyBox2.Left -= 15;
+            }
+            else
+            {
+                this.historyBox2.Left -= 30;
+            }
+            if (historyBox2.Right < 0)
+                historyBox2.Left = this.ClientRectangle.Width;
         }
 
         private void historyBox_Click(object sender, EventArgs e)
@@ -379,6 +397,11 @@ namespace takearest
         {
             mysetTime += 40 * 60;
             add40minute.Visible = false;
+        }
+
+        private void historyBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

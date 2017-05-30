@@ -65,11 +65,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CodeAndRest.cs">
+    <Compile Include="Encouragement.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CodeAndRest.Designer.cs">
-      <DependentUpon>CodeAndRest.cs</DependentUpon>
+    <Compile Include="Encouragement.Designer.cs">
+      <DependentUpon>Encouragement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPage.Designer.cs">
+      <DependentUpon>MainPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,8 +96,14 @@
     <Compile Include="reminder.Designer.cs">
       <DependentUpon>reminder.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="CodeAndRest.resx">
-      <DependentUpon>CodeAndRest.cs</DependentUpon>
+    <EmbeddedResource Include="Encouragement.resx">
+      <DependentUpon>Encouragement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPage.zh-CN.resx">
+      <DependentUpon>MainPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -176,6 +188,8 @@
     <None Include="Resources\pics\植物草丛.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\pics\GirlFlipHair.png" />
+    <None Include="Resources\pics\javascript.ico" />
     <Content Include="www.ico.la_d5874550ef5c0b994059749490412283_128X128.ico" />
   </ItemGroup>
   <ItemGroup>

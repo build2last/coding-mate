@@ -1,5 +1,5 @@
 *.pdb
-takearest/bin/Debug/AxInterop.WMPLib.dll
+takearest/bin/Debug/*
 *.xml
 .obj/*
 .bin/*

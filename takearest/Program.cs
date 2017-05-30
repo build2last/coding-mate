@@ -16,7 +16,7 @@ namespace takearest
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CodeAndRest());
+            Application.Run(new MainPage());
         }
     }
 }

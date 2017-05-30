@@ -8,10 +8,14 @@ C:\Users\uulin\OneDrive\Github\coding-mate\takearest\bin\Debug\编程伴侣.pdb
 C:\Users\uulin\OneDrive\Github\coding-mate\takearest\bin\Debug\Interop.WMPLib.dll
 C:\Users\uulin\OneDrive\Github\coding-mate\takearest\bin\Debug\AxInterop.WMPLib.dll
 C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Debug\takearest.csprojResolveAssemblyReference.cache
-C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Debug\takearest.CodeAndRest.resources
 C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Debug\takearest.Properties.Resources.resources
 C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Debug\takearest.record.resources
 C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Debug\takearest.reminder.resources
 C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Debug\takearest.csproj.GenerateResource.Cache
 C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Debug\编程伴侣.exe
 C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Debug\编程伴侣.pdb
+C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Debug\takearest.MainPage.resources
+C:\Users\uulin\OneDrive\Github\coding-mate\takearest\bin\Debug\zh-CN\编程伴侣.resources.dll
+C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Debug\takearest.MainPage.zh-CN.resources
+C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Debug\zh-CN\编程伴侣.resources.dll
+C:\Users\uulin\OneDrive\Github\coding-mate\takearest\obj\Debug\takearest.Encouragement.resources

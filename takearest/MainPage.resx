@@ -117,36 +117,102 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="bindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>107, 17</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="cpp_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAztJREFUSEvllllXUlEUgHl39dBrf6PX/luuzCxXKo7kkBODkhekGJxAHCLMiZBA
-        L4MMChIyOKCVq+Vu74OX0FAOxlsP37qw7737O/vcc+/ZsqZOjaetXwftb/UgrxGUi3K+6NQYn7er6ho7
-        1DIZBi6/bEdhdz8Nob3DmkC5Nr1haO0TAvWtI4+YiOx0Ipe/gOzpzzvJ5fk4OrtgwrYBXbC+pUREQUqU
-        OflxK8lMHqIHOS5iyRxsiTGqKNIgVz5GUR2X6CB9ClrjInQMTiKGinQOGUA+oKdndIGSGPK+ooji4XiG
-        pgEa5CrAh8vAkcKzNiU0XP0vBwokzrlFNELp5qauMRgVZkFnWca47mbSclQvIgwzDvD6IzDvcMHg+BQM
-        aafZkSpW6a3QqzLWpqJNT4BV8/T1MHQNG8ArRsDtC8E74wKIoT1Yd4v4HgmlsvtVNG1fBc9OGCy2z6wS
-        s3UFjHNOaOmdgLnlDRDMSzi9GklyPxHd2NyjBR0mM1md7Bm96h5n0PlmhRZedo+VSqoT0aorVKRmR7bq
-        kEJMonCOUa2ISKRPQDU5Ty8g+4bx0NI3Qe/RL5SkEBuXiIgfnrDreGDfOl8YZUIUK3+CoofcoiyB1/BA
-        381gLEWVVf+tqwbKFfi/RfRcbsZ44BbR78Pj7xBPHbN9qNwg7oJLREcxkoQJ8zIMamdgRLDCp00R0igu
-        TST9LherKCKiB1kmsNjXmXB1KwhWhxtSuXN2PoGboNPlL1ZK0DvmdInXYneKaL93bOyAUm9jiXNXN0kj
-        pUQe/x5uA2bwBeOQzOZZzL0TY7HtUILFuEQ0esHy8ZqAfhNLaz5QKE3sw/lGZWJTurjqBcWosRijaumF
-        rTh1Ll8EetVmCGKMxFRZDBsOEu7j4qA2SqE0ArVoNGUUW/fsMhlVRjHKU3ExfMudgWF2Bfo1U2CyrcE4
-        NiWTM04UnrFrKNHCylfWsEiDI5mdYpk/sYoiguaZFoF5fg0TeCCSyBbPEaXXlotxiwhpIdxcEDxUJfoX
-        bhUVWuLCyGsB5fprm8At+tLj32dtbLn29j7EkkdSSxwoirAZDFML2zPyAbprBOWinNgJ2bHXe9DYoZb9
-        BjcS9Bp9jW+pAAAAAElFTkSuQmCC
-</value>
+  <data name="&gt;&gt;java_btn.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
-  <metadata name="timer2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>252, 17</value>
-  </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="showPassedTimeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="startBtn.Text" xml:space="preserve">
+    <value>开始计时</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label_note.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 17</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="JS.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 134</value>
+  </data>
+  <data name="historyBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑 Light, 10.5pt</value>
+  </data>
+  <data name="python_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;type_text.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;add40minute.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="comboBox1.Items3" xml:space="preserve">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;historyBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;history2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 17</value>
+  </data>
+  <data name="&gt;&gt;JS.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;timer1.Name" xml:space="preserve">
+    <value>timer1</value>
+  </data>
+  <data name="comboBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="stopBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="history.Text" xml:space="preserve">
+    <value>记录</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Coding Type</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label_note.Name" xml:space="preserve">
+    <value>label_note</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;add40minute.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;stopBtn.Name" xml:space="preserve">
+    <value>stopBtn</value>
+  </data>
+  <data name="historyBox.Text" xml:space="preserve">
+    <value>record</value>
+  </data>
+  <data name="type_text.Items7" xml:space="preserve">
+    <value>Web</value>
+  </data>
+  <data name="&gt;&gt;historyBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cpp_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         /9j/4AAQSkZJRgABAQEASABIAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB
@@ -2134,6 +2200,78 @@
         zF/wooorE6D/2Q==
 </value>
   </data>
+  <data name="&gt;&gt;add40minute.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="type_text.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 37</value>
+  </data>
+  <data name="java_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;showPassedTimeLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="historyBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 20</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>请您注意身体</value>
+  </data>
+  <data name="&gt;&gt;history.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cpp_btn.Name" xml:space="preserve">
+    <value>cpp_btn</value>
+  </data>
+  <data name="&gt;&gt;history2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="java_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 134</value>
+  </data>
+  <data name="&gt;&gt;showPassedTimeLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;add40minute.Name" xml:space="preserve">
+    <value>add40minute</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="type_text.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;python_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="history.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 26</value>
+  </data>
+  <data name="historyBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;history.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 17</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAgIAAAAEAIAAoCAEAFgAAACgAAACAAAAAAAEAAAEAIAAAAAAAAAABAAAAAAAAAAAAAAAAAAAA
@@ -3266,4 +3404,477 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
 </value>
   </data>
+  <data name="startBtn.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 4, 3, 4</value>
+  </data>
+  <data name="&gt;&gt;stopBtn.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="note_text.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 74</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 148</value>
+  </data>
+  <data name="history.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 153</value>
+  </data>
+  <data name="type_text.Items1" xml:space="preserve">
+    <value>C++</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;historyBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label_note.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="note_text.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;historyBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="type_text.Items" xml:space="preserve">
+    <value>Android</value>
+  </data>
+  <data name="&gt;&gt;startBtn.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="history2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 19</value>
+  </data>
+  <data name="add40minute.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;type_text.Name" xml:space="preserve">
+    <value>type_text</value>
+  </data>
+  <data name="&gt;&gt;type_text.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="historyBox.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="showPassedTimeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="historyBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, -1</value>
+  </data>
+  <data name="&gt;&gt;JS.Name" xml:space="preserve">
+    <value>JS</value>
+  </data>
+  <data name="&gt;&gt;history2.Name" xml:space="preserve">
+    <value>history2</value>
+  </data>
+  <data name="add40minute.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;historyBox.Name" xml:space="preserve">
+    <value>historyBox</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>198, 6</value>
+  </data>
+  <data name="&gt;&gt;timer2.Name" xml:space="preserve">
+    <value>timer2</value>
+  </data>
+  <data name="type_text.Items3" xml:space="preserve">
+    <value>JAVA</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainPage</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="type_text.Items4" xml:space="preserve">
+    <value>JavaScript</value>
+  </data>
+  <data name="&gt;&gt;JS.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="startBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 33</value>
+  </data>
+  <data name="comboBox1.Items" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="comboBox1.Items4" xml:space="preserve">
+    <value>120</value>
+  </data>
+  <data name="python_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>136, 134</value>
+  </data>
+  <data name="add40minute.Text" xml:space="preserve">
+    <value>再续40分钟</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;stopBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="type_text.Items8" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 17</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="startBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 37</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 44</value>
+  </data>
+  <data name="label_note.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 74</value>
+  </data>
+  <data name="&gt;&gt;historyBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="cpp_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="showPassedTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>408, 304</value>
+  </data>
+  <data name="&gt;&gt;startBtn.Name" xml:space="preserve">
+    <value>startBtn</value>
+  </data>
+  <data name="comboBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>341, 177</value>
+  </data>
+  <data name="type_text.Items6" xml:space="preserve">
+    <value>Python</value>
+  </data>
+  <data name="&gt;&gt;python_btn.Name" xml:space="preserve">
+    <value>python_btn</value>
+  </data>
+  <data name="showPassedTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 17</value>
+  </data>
+  <data name="comboBox1.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="historyBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>265, 19</value>
+  </data>
+  <data name="python_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="&gt;&gt;label_note.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="label_note.Text" xml:space="preserve">
+    <value>Note</value>
+  </data>
+  <data name="&gt;&gt;history.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="comboBox1.Items2" xml:space="preserve">
+    <value>45</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="type_text.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 25</value>
+  </data>
+  <data name="&gt;&gt;historyBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;JS.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;timer2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;showPassedTimeLabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="type_text.Items2" xml:space="preserve">
+    <value>C</value>
+  </data>
+  <data name="comboBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>109, 6</value>
+  </data>
+  <data name="&gt;&gt;java_btn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;note_text.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;stopBtn.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="comboBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 25</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;bindingSource1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cpp_btn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 134</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>编程</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>390, 153</value>
+  </data>
+  <data name="label_note.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;note_text.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="type_text.Items9" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;history.Name" xml:space="preserve">
+    <value>history</value>
+  </data>
+  <data name="stopBtn.Text" xml:space="preserve">
+    <value>结束计时</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 17</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;bindingSource1.Name" xml:space="preserve">
+    <value>bindingSource1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label_note.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>分钟</value>
+  </data>
+  <data name="history.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="history.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="java_btn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 32</value>
+  </data>
+  <data name="&gt;&gt;showPassedTimeLabel.Name" xml:space="preserve">
+    <value>showPassedTimeLabel</value>
+  </data>
+  <data name="JS.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;java_btn.Name" xml:space="preserve">
+    <value>java_btn</value>
+  </data>
+  <data name="&gt;&gt;python_btn.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="note_text.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 21</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 134</value>
+  </data>
+  <data name="showPassedTimeLabel.Text" xml:space="preserve">
+    <value>totaltime</value>
+  </data>
+  <data name="stopBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 93</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.Name" xml:space="preserve">
+    <value>comboBox1</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;note_text.Name" xml:space="preserve">
+    <value>note_text</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 9</value>
+  </data>
+  <data name="label_note.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;cpp_btn.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="note_text.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;comboBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="historyBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;java_btn.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="comboBox1.Items1" xml:space="preserve">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;startBtn.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="cpp_btn.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="showPassedTimeLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>微软雅黑, 9pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>642, 331</value>
+  </data>
+  <data name="&gt;&gt;historyBox2.Name" xml:space="preserve">
+    <value>historyBox2</value>
+  </data>
+  <data name="&gt;&gt;note_text.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cpp_btn.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="startBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;startBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="add40minute.Location" type="System.Drawing.Point, System.Drawing">
+    <value>211, 134</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;python_btn.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="stopBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 29</value>
+  </data>
+  <data name="cpp_btn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABoAAAAgCAYAAAAMq2gFAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAztJREFUSEvllllXUlEUgHl39dBrf6PX/luuzCxXKo7kkBODkhekGJxAHCLMiZBA
+        L4MMChIyOKCVq+Vu74OX0FAOxlsP37qw7737O/vcc+/ZsqZOjaetXwftb/UgrxGUi3K+6NQYn7er6ho7
+        1DIZBi6/bEdhdz8Nob3DmkC5Nr1haO0TAvWtI4+YiOx0Ipe/gOzpzzvJ5fk4OrtgwrYBXbC+pUREQUqU
+        OflxK8lMHqIHOS5iyRxsiTGqKNIgVz5GUR2X6CB9ClrjInQMTiKGinQOGUA+oKdndIGSGPK+ooji4XiG
+        pgEa5CrAh8vAkcKzNiU0XP0vBwokzrlFNELp5qauMRgVZkFnWca47mbSclQvIgwzDvD6IzDvcMHg+BQM
+        aafZkSpW6a3QqzLWpqJNT4BV8/T1MHQNG8ArRsDtC8E74wKIoT1Yd4v4HgmlsvtVNG1fBc9OGCy2z6wS
+        s3UFjHNOaOmdgLnlDRDMSzi9GklyPxHd2NyjBR0mM1md7Bm96h5n0PlmhRZedo+VSqoT0aorVKRmR7bq
+        kEJMonCOUa2ISKRPQDU5Ty8g+4bx0NI3Qe/RL5SkEBuXiIgfnrDreGDfOl8YZUIUK3+CoofcoiyB1/BA
+        381gLEWVVf+tqwbKFfi/RfRcbsZ44BbR78Pj7xBPHbN9qNwg7oJLREcxkoQJ8zIMamdgRLDCp00R0igu
+        TST9LherKCKiB1kmsNjXmXB1KwhWhxtSuXN2PoGboNPlL1ZK0DvmdInXYneKaL93bOyAUm9jiXNXN0kj
+        pUQe/x5uA2bwBeOQzOZZzL0TY7HtUILFuEQ0esHy8ZqAfhNLaz5QKE3sw/lGZWJTurjqBcWosRijaumF
+        rTh1Ll8EetVmCGKMxFRZDBsOEu7j4qA2SqE0ArVoNGUUW/fsMhlVRjHKU3ExfMudgWF2Bfo1U2CyrcE4
+        NiWTM04UnrFrKNHCylfWsEiDI5mdYpk/sYoiguaZFoF5fg0TeCCSyBbPEaXXlotxiwhpIdxcEDxUJfoX
+        bhUVWuLCyGsB5fprm8At+tLj32dtbLn29j7EkkdSSxwoirAZDFML2zPyAbprBOWinNgJ2bHXe9DYoZb9
+        BjcS9Bp9jW+pAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;history2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="type_text.Items5" xml:space="preserve">
+    <value>MachineLearning</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;type_text.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="history2.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <metadata name="timer2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>252, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>zh-CN</value>
+  </metadata>
+  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="bindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>107, 17</value>
+  </metadata>
 </root>
