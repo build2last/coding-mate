@@ -62,9 +62,7 @@ namespace takearest
                 Console.WriteLine(href);
                 using (WebClient myWebClient = new WebClient())
                 {
-                    //Console.WriteLine(file_name);
                     this.back_img_url = System.IO.Path.Combine(globePath, file_name + System.IO.Path.GetExtension(href));
-                    MessageBox.Show(href);
                     try
                     {
                         myWebClient.DownloadFile(new Uri(href), this.back_img_url);
